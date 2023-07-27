@@ -70,8 +70,8 @@
   </full-page>
   <footer class="position-absolute bottom-0 end-0">
     <div class="d-flex justify-content-end p-2">
-      <button type="button" class="btn btn-primary btn-lg btn-rounded mx-1"><i class="bi bi-linkedin fs-4"></i></button>
-      <button type="button" class="btn btn-primary btn-lg btn-rounded mx-1"><i class="bi bi-envelope-fill fs-3"></i></button>
+      <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-lg btn-rounded mx-1" tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-4"></i></a>
+      <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-lg btn-rounded mx-1" tabindex="1" role="button" aria-disabled="true"><i class="bi bi-envelope-fill fs-3"></i></a>
     </div>
   </footer>
 </template>
