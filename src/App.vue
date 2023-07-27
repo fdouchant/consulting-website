@@ -44,12 +44,34 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <div class="px-5">
+        <div class="text-center mb-5">
+          <h1 class="mb-4">Business Analyse</h1>
+          <div class="btn-rounded bg-primary mx-auto">
+            <i class="bi bi-puzzle fs-1 text-white"></i>
+          </div>
+        </div>
+
+        <p class="h5 mb-4">Vous souhaitez réaliser une étude avant de démarrer un projet d'envergure ?</p>
+
+        <p>
+          Grace à mon expertise en business analyse, je suis abilité à :
+        <ul>
+          <li>collecter et synthétiser les besoins métiers et techniques dans le but de définir le périmètre du projet
+          </li>
+          <li>étudier plusieurs variantes de solutions : produits du marché, développement internalisé ou externalisé
+            (make or buy)</li>
+          <li>rédiger un appel d'offre public</li>
+        </ul>
+        </p>
+      </div>
+    </div>
   </full-page>
   <footer class="position-absolute bottom-0 end-0">
     <div class="d-flex justify-content-end p-2">
-      <button type="button" class="btn btn-primary btn-lg btn-footer-link mx-1"><i class="bi bi-linkedin"></i></button>
-      <button type="button" class="btn btn-primary btn-lg btn-footer-link mx-1"><i
-          class="bi bi-envelope-fill"></i></button>
+      <button type="button" class="btn btn-primary btn-lg btn-rounded mx-1"><i class="bi bi-linkedin fs-4"></i></button>
+      <button type="button" class="btn btn-primary btn-lg btn-rounded mx-1"><i class="bi bi-envelope-fill fs-3"></i></button>
     </div>
   </footer>
 </template>
@@ -71,7 +93,7 @@ export default {
 </script>
 
 <style scoped>
-.btn-footer-link {
+.btn-rounded {
   position: relative;
   border-radius: 50%;
   height: 50px;
