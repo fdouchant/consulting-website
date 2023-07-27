@@ -1,6 +1,6 @@
 <template>
   <full-page ref="fullpage" :options="options">
-    <div class="section text-center">
+    <div class="section">
       <div class="text-center">
         <h1>Fabrice Douchant Consulting</h1>
         <img src="https://placehold.co/300x200" class="my-3" alt="Fabrice Douchant Consulting Logo">
@@ -35,6 +35,12 @@
               <figcaption class="blockquote-footer">Ma devise</figcaption>
             </figure>
           </div>
+        </div>
+        <div class=text-center>
+          <h2 class="my-5">Mes services</h2>
+          <button class="btn btn-outline-primary btn-lg mx-3">Business analyse</button>
+          <button class="btn btn-outline-success btn-lg mx-3">Conduite de projet</button>
+          <button class="btn btn-outline-warning btn-lg mx-3">Méthodologie - PMO</button>
         </div>
       </div>
     </div>
@@ -77,4 +83,5 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}</style>
+}
+</style>
