@@ -1,3 +1,23 @@
+/* 
+TODO :
+- change colors
+- change images
+- add other services
+- review texts
+- responsive content : not nice on mobile
+*/
+<script setup>
+import Service from './components/Service.vue'
+
+const options = {
+  navigation: true,
+  credits: { // TODO add a notice about fullPage.js
+    enabled: false, // not working
+    label: '',
+  }
+}
+</script>
+
 <template>
   <full-page ref="fullpage" :options="options">
     <div class="section">
@@ -45,65 +65,32 @@
       </div>
     </div>
     <div class="section">
-      <div class="px-5">
-        <div class="text-center mb-5">
-          <h1 class="mb-4">Business Analyse</h1>
-          <div class="btn-rounded bg-primary mx-auto">
-            <i class="bi bi-puzzle fs-1 text-white"></i>
-          </div>
-        </div>
-
-        <p class="h5 mb-4">Vous souhaitez réaliser une étude avant de démarrer un projet d'envergure ?</p>
-
-        <p>
-          Grace à mon expertise en business analyse, je suis abilité à :
-        <ul>
-          <li>collecter et synthétiser les besoins métiers et techniques dans le but de définir le périmètre du projet
-          </li>
-          <li>étudier plusieurs variantes de solutions : produits du marché, développement internalisé ou externalisé
-            (make or buy)</li>
-          <li>rédiger un appel d'offre public</li>
-        </ul>
-        </p>
-      </div>
+      <Service title="Business Analyse" icon="puzzle">
+        <template #question>Vous souhaitez réaliser une étude avant de démarrer un projet d'envergure ?</template>
+        <template #default>
+          <p>
+            Grace à mon expertise en business analyse, je suis abilité à :
+          <ul>
+            <li>collecter et synthétiser les besoins métiers et techniques dans le but de définir le périmètre du projet
+            </li>
+            <li>étudier plusieurs variantes de solutions : produits du marché, développement internalisé ou externalisé
+              (make or buy)</li>
+            <li>rédiger un appel d'offre public</li>
+          </ul>
+          </p>
+        </template>
+      </Service>
     </div>
   </full-page>
   <footer class="position-absolute bottom-0 end-0">
     <div class="d-flex justify-content-end p-2">
-      <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-lg btn-rounded mx-1" tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-4"></i></a>
-      <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-lg btn-rounded mx-1" tabindex="1" role="button" aria-disabled="true"><i class="bi bi-envelope-fill fs-3"></i></a>
+      <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-lg btn-icon-rounded mx-1"
+        tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-4"></i></a>
+      <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-lg btn-icon-rounded mx-1" tabindex="1" role="button"
+        aria-disabled="true"><i class="bi bi-envelope-fill fs-3"></i></a>
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      options: {
-        navigation: true,
-        credits: { // TODO add a notice about fullPage.js
-          enabled: false, // not working
-          label: '',
-        }
-      }
-    }
-  }
-}
-</script>
-
 <style scoped>
-.btn-rounded {
-  position: relative;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-
-  >i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
 </style>
