@@ -52,7 +52,6 @@ const options = {
                 <p>Un projet est une aventure humaine qui requière coopération, rigueur, pragmatisme et une
                   bonne dose d'optimisme</p>
               </blockquote>
-              <figcaption class="blockquote-footer">Ma devise</figcaption>
             </figure>
           </div>
         </div>
@@ -82,12 +81,41 @@ const options = {
       </Service>
     </div>
   </full-page>
-  <footer class="position-absolute bottom-0 end-0">
-    <div class="d-flex justify-content-end p-2">
+  <footer class="position-absolute bottom-0 end-0 w-100">
+    <div class="d-flex align-items-center p-2">
+      <div class="flex-fill">
+        <!-- Button trigger modal -->
+<a href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">
+  Crédits
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        Réalisation de ce site
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Le code source de ce site est disponible sur <a href="https://github.com/fdouchant/consulting-website">github</a></p>
+        Il utilise plusieurs technologies open source : 
+        <a href="https://vuejs.org" target="_blank" class="link-secondary">vue.js</a>, 
+        <a href="https://getbootstrap.com" target="_blank" class="link-secondary">bootstrap</a>, 
+        <a href="https://vitejs.dev" target="_blank" class="link-secondary">vite.js</a>, 
+        <a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link-secondary">fullPage.js</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div>
       <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-lg btn-icon-rounded mx-1"
         tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-4"></i></a>
       <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-lg btn-icon-rounded mx-1" tabindex="1" role="button"
         aria-disabled="true"><i class="bi bi-envelope-fill fs-3"></i></a>
+      </div>
     </div>
   </footer>
 </template>
