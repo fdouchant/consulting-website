@@ -44,7 +44,7 @@ const options = {
           <p>Axé solutions et résultats, je mets à profit mes compétences en analyse et en conduite de projet ainsi que
             mes connaissances méthodologiques et en leadership afin d'atteindre les objectifs de mes clients.
             Que ce soit dans le cadre de projets / programmes de dématerialisation, techniques ou transverses, j'ai le
-            soucis d'apporter une valeur ajouté continue et mesurable.</p>
+            soucis d'apporter une valeur ajouté continue et mesurable à l'ensemble de mes activités.</p>
           <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
             et
             événementiel, sociétés de services, éditeurs de solutions, ...</p>
@@ -68,18 +68,19 @@ const options = {
     </div>
     <div class="section" data-anchor="business-analysis">
       <Service title="Business Analyse" icon="puzzle">
-        <template #question>Vous souhaitez réaliser une étude avant de démarrer un projet d'envergure ?</template>
+        <template #question>Vous souhaitez réaliser une étude dans le cadre d'un projet d'envergure ?</template>
         <template #default>
           <p>
-            Grace à mon expertise en business analyse, je suis abilité à :
+            De par mon expérience en business analyse, je suis abilité à :
           <ul>
-            <li>collecter et synthétiser les besoins métiers et techniques dans le but de définir le périmètre du projet
-            </li>
-            <li>étudier plusieurs variantes de solutions : produits du marché, développement internalisé ou externalisé
-              (make or buy)</li>
-            <li>rédiger un appel d'offre public</li>
+            <li>identifier, collecter et synthétiser les besoins métiers et techniques afin de définir le périmètre du projet. Je procède ainsi à une analyse systèmique du domaine</li>
+            <li>cartographier les processus métiers et permettre ainsi d'auditer, d'automatiser ou d'optimiser ces processus</li>
+            <li>étudier les variantes de solutions du projet : sélection de produits du marché, développement interne/externe (make or buy)</li>
+            <li>procéder à un appel d'offre public</li>
+            <li>rédiger un cahier des charges incluant les grandes étapes du projet, un calendrier et un plan de financement</li>
           </ul>
           </p>
+          <p>Certifications dans le domaine : Scrum Product Owner, CCBA</p>
         </template>
       </Service>
     </div>
