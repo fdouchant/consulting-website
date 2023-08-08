@@ -2,10 +2,17 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
+// hack fullPage
+@include media-breakpoint-down(md) {
+  #fp-nav {
+    display: none;
+  }
+}
+
 // custom classes
 .btn-icon-rounded {
   position: relative;
-  border-radius: 50%;
+  border-radius: 100%;
   height: $icon-size;
   width: $icon-size;
 

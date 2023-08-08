@@ -11,7 +11,7 @@ import Service from './components/Service.vue'
 
 const options = {
   navigation: true,
-  credits: { // TODO add a notice about fullPage.js
+  credits: {
     enabled: false, // not working
     label: '',
   }
@@ -25,7 +25,7 @@ const options = {
         <h1>Fabrice Douchant Consulting</h1>
         <img src="https://placehold.co/300x200" class="my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
-        <button class="btn btn-primary my-4" @click="$refs.fullpage.api.moveSectionDown()">
+        <button class="btn btn-primary btn-lg my-4" @click="$refs.fullpage.api.moveSectionDown()">
           En savoir plus
         </button>
       </div>
@@ -33,34 +33,34 @@ const options = {
     <div class="section section-lengthy">
       <div class="container">
         <h1 class="text-center my-5">Présentation</h1>
-        <div class="card border-0">
+        <div>
           <img src="https://placehold.co/100x100" style="width: 100px;" alt="Fabrice Douchant"
-            class="card-img-left rounded">
-          <div class="card-body">
-            <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de
-              gestion.
-              Fort de cette expérience complète et reconnue dans les technologies de l'information, je me spécialise dans
-              la
-              transformation digitale : la modernisation d'un système ou la dématérialisation d'un processus métier dans
-              le
-              cadre de projets transverses à forte valeur ajoutée.</p>
-            <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
-              et
-              événementiel, sociétés de services, éditeurs de solutions.</p>
+            class="rounded float-start my-2 me-2">
+          <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de
+            gestion.
+            Fort de cette expérience complète et reconnue dans les technologies de l'information, je me spécialise dans
+            la
+            transformation digitale : la modernisation d'un système ou la dématérialisation d'un processus métier dans
+            le
+            cadre de projets transverses à forte valeur ajoutée.</p>
+          <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
+            et
+            événementiel, sociétés de services, éditeurs de solutions.</p>
 
-            <figure class="text-center">
-              <blockquote class="blockquote">
-                <p>Un projet est une aventure humaine qui requière coopération, rigueur, pragmatisme et une
-                  bonne dose d'optimisme</p>
-              </blockquote>
-            </figure>
-          </div>
+          <figure class="text-center my-4">
+            <blockquote class="blockquote">
+              <p>Un projet est une aventure humaine qui requière coopération, rigueur, pragmatisme et une
+                bonne dose d'optimisme</p>
+            </blockquote>
+          </figure>
         </div>
         <div class=text-center>
           <h2 class="my-5">Mes services</h2>
-          <button class="btn btn-outline-primary btn-lg mx-3">Business analyse</button>
-          <button class="btn btn-outline-success btn-lg mx-3">Conduite de projet</button>
-          <button class="btn btn-outline-warning btn-lg mx-3">Méthodologie - PMO</button>
+          <div class="my-3 d-flex flex-wrap justify-content-center align-items-center">
+            <button class="btn btn-outline-primary btn-lg m-2">Business analyse</button>
+            <button class="btn btn-outline-success btn-lg m-2">Conduite de projet</button>
+            <button class="btn btn-outline-warning btn-lg m-2">Méthodologie - PMO</button>
+          </div>
         </div>
       </div>
     </div>
@@ -97,10 +97,10 @@ const options = {
 
   <!-- Modal -->
   <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          Réalisation de ce site
+          À propos de ce site
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -119,14 +119,7 @@ const options = {
 </template>
 
 <style lang="scss" scoped>
-// FIXME cannot load mixin
-// @include media-media-breakpoint-up(md) {
-//   #fp-nav {
-//     display: none;
-//   }
-// }
-
 .section-lengthy {
-  padding-bottom: $icon-size + 10;
+  padding-bottom: $icon-size + 20;
 }
 </style>
