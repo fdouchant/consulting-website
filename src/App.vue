@@ -11,6 +11,7 @@ import Service from './components/Service.vue'
 
 const options = {
   navigation: true,
+  autoScrolling: true,
   credits: {
     enabled: false, // not working
     label: '',
@@ -20,32 +21,33 @@ const options = {
 
 <template>
   <full-page ref="fullpage" :options="options">
-    <div class="section">
+    <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
         <img src="https://placehold.co/300x200" class="my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
-        <button class="btn btn-primary btn-lg my-4" @click="$refs.fullpage.api.moveSectionDown()">
+        <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
         </button>
       </div>
     </div>
-    <div class="section section-lengthy">
+    <div class="section section-lengthy" data-anchor="about">
       <div class="container">
         <h1 class="text-center my-5">Présentation</h1>
         <div>
           <img src="https://placehold.co/100x100" style="width: 100px;" alt="Fabrice Douchant"
             class="rounded float-start my-2 me-2">
-          <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de
-            gestion.
-            Fort de cette expérience complète et reconnue dans les technologies de l'information, je me spécialise dans
-            la
-            transformation digitale : la modernisation d'un système ou la dématérialisation d'un processus métier dans
-            le
-            cadre de projets transverses à forte valeur ajoutée.</p>
+          <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de gestion
+            dans le domaine de l'IT.
+            Fort de cette expérience complète et reconnue, je me spécialise dans l'évolution et la modernisation des
+            systèmes d'informations.</p>
+          <p>Axé solutions et résultats, je mets à profit mes compétences en analyse et en conduite de projet ainsi que
+            mes connaissances méthodologiques et en leadership afin d'atteindre les objectifs de mes clients.
+            Que ce soit dans le cadre de projets / programmes de dématerialisation, techniques ou transverses, j'ai le
+            soucis d'apporter une valeur ajouté continue et mesurable.</p>
           <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
             et
-            événementiel, sociétés de services, éditeurs de solutions.</p>
+            événementiel, sociétés de services, éditeurs de solutions, ...</p>
 
           <figure class="text-center my-4">
             <blockquote class="blockquote">
@@ -57,14 +59,14 @@ const options = {
         <div class=text-center>
           <h2 class="my-5">Mes services</h2>
           <div class="my-3 d-flex flex-wrap justify-content-center align-items-center">
-            <button class="btn btn-outline-primary btn-lg m-2">Business analyse</button>
+            <button class="btn btn-outline-primary btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('business-analysis')">Business analyse</button>
             <button class="btn btn-outline-success btn-lg m-2">Conduite de projet</button>
             <button class="btn btn-outline-warning btn-lg m-2">Méthodologie - PMO</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" data-anchor="business-analysis">
       <Service title="Business Analyse" icon="puzzle">
         <template #question>Vous souhaitez réaliser une étude avant de démarrer un projet d'envergure ?</template>
         <template #default>
@@ -118,8 +120,6 @@ const options = {
   </div>
 </template>
 
-<style lang="scss" scoped>
-.section-lengthy {
+<style lang="scss" scoped>.section-lengthy {
   padding-bottom: $icon-size + 20;
-}
-</style>
+}</style>
