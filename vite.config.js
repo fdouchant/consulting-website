@@ -1,5 +1,5 @@
-import { fileURLToPath } from "url"
 import { defineConfig } from 'vite'
+import path from 'path'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
@@ -7,13 +7,14 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      '@': path.resolve(__dirname, 'src'),
+      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/variables.scss";`,
+        additionalData: `@import "@/variables";`,
       },
     },
   },

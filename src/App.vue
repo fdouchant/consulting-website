@@ -10,7 +10,7 @@ TODO :
 import Service from './components/Service.vue'
 
 const options = {
-  //navigation: true,
+  navigation: true,
   credits: { // TODO add a notice about fullPage.js
     enabled: false, // not working
     label: '',
@@ -82,47 +82,50 @@ const options = {
       </Service>
     </div>
   </full-page>
-  <footer class="position-absolute bottom-0 end-0 w-100">
-    <div class="d-flex align-items-end p-1">
-      <div class="flex-fill">
-        <!-- Button trigger modal -->
-        <a href="#" data-bs-toggle="modal" data-bs-target="#creditsModal" class="fs-6 fw-light">
-          Crédits
-        </a>
 
-        <!-- Modal -->
-        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                Réalisation de ce site
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>Le code source de ce site est disponible sur <a
-                    href="https://github.com/fdouchant/consulting-website">github</a></p>
-                Il utilise plusieurs technologies open source :
-                <a href="https://vuejs.org" target="_blank" class="link-secondary">vue.js</a>,
-                <a href="https://getbootstrap.com" target="_blank" class="link-secondary">bootstrap</a>,
-                <a href="https://vitejs.dev" target="_blank" class="link-secondary">vite.js</a>,
-                <a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link-secondary">fullPage.js</a>
+  <!-- Button trigger modal -->
+  <a class="position-absolute bottom-0 start-0 p-2 fs-6 fw-light" href="#" data-bs-toggle="modal"
+    data-bs-target="#creditsModal">
+    Crédits
+  </a>
+  <div class="position-absolute bottom-0 end-0 p-2">
+    <a class=" btn btn-primary btn-icon-rounded mx-1" href="https://www.linkedin.com/in/fdouchant/" target="_blank"
+      tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-5"></i></a>
+    <a class="btn btn-primary btn-icon-rounded mx-1" href="mailto:fabrice@douchant.ch" tabindex="1" role="button"
+      aria-disabled="true"><i class="bi bi-envelope-fill fs-5"></i></a>
+  </div>
 
-              </div>
-            </div>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          Réalisation de ce site
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Le code source de ce site est disponible sur <a
+              href="https://github.com/fdouchant/consulting-website">github</a></p>
+          Il utilise plusieurs technologies open source :
+          <a href="https://vuejs.org" target="_blank" class="link-secondary">vue.js</a>,
+          <a href="https://getbootstrap.com" target="_blank" class="link-secondary">bootstrap</a>,
+          <a href="https://vitejs.dev" target="_blank" class="link-secondary">vite.js</a>,
+          <a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link-secondary">fullPage.js</a>
+
         </div>
       </div>
-      <div>
-        <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-icon-rounded mx-1"
-          tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-5"></i></a>
-        <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-icon-rounded mx-1" tabindex="1" role="button"
-          aria-disabled="true"><i class="bi bi-envelope-fill fs-5"></i></a>
-      </div>
     </div>
-  </footer>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+// FIXME cannot load mixin
+// @include media-media-breakpoint-up(md) {
+//   #fp-nav {
+//     display: none;
+//   }
+// }
+
 .section-lengthy {
   padding-bottom: $icon-size + 10;
 }
