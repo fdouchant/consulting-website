@@ -3,7 +3,7 @@ defineProps(['title', 'icon'])
 </script>
 
 <template>
-  <div class="px-5">
+  <div class="container">
     <div class="text-center mb-5">
       <h1 class="mb-4">{{ title }}</h1>
       <div class="btn-icon-rounded bg-primary mx-auto">

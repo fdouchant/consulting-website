@@ -10,7 +10,7 @@ TODO :
 import Service from './components/Service.vue'
 
 const options = {
-  navigation: true,
+  //navigation: true,
   credits: { // TODO add a notice about fullPage.js
     enabled: false, // not working
     label: '',
@@ -21,21 +21,22 @@ const options = {
 <template>
   <full-page ref="fullpage" :options="options">
     <div class="section">
-      <div class="text-center">
+      <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="https://placehold.co/300x200" class="my-3" alt="Fabrice Douchant Consulting Logo">
+        <img src="https://placehold.co/300x200" class="my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary my-4" @click="$refs.fullpage.api.moveSectionDown()">
           En savoir plus
         </button>
       </div>
     </div>
-    <div class="section">
-      <div class="px-5">
-        <h1 class="text-center mb-5">Présentation</h1>
-        <div class="card flex-row border-0">
-          <img src="https://placehold.co/100x100" alt="Fabrice Douchant" class="card-img-left align-self-start rounded">
-          <div class="card-body py-0">
+    <div class="section section-lengthy">
+      <div class="container">
+        <h1 class="text-center my-5">Présentation</h1>
+        <div class="card border-0">
+          <img src="https://placehold.co/100x100" style="width: 100px;" alt="Fabrice Douchant"
+            class="card-img-left rounded">
+          <div class="card-body">
             <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de
               gestion.
               Fort de cette expérience complète et reconnue dans les technologies de l'information, je me spécialise dans
@@ -82,43 +83,47 @@ const options = {
     </div>
   </full-page>
   <footer class="position-absolute bottom-0 end-0 w-100">
-    <div class="d-flex align-items-center p-2">
+    <div class="d-flex align-items-end p-1">
       <div class="flex-fill">
         <!-- Button trigger modal -->
-<a href="#" data-bs-toggle="modal" data-bs-target="#creditsModal">
-  Crédits
-</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#creditsModal" class="fs-6 fw-light">
+          Crédits
+        </a>
 
-<!-- Modal -->
-<div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        Réalisation de ce site
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Le code source de ce site est disponible sur <a href="https://github.com/fdouchant/consulting-website">github</a></p>
-        Il utilise plusieurs technologies open source : 
-        <a href="https://vuejs.org" target="_blank" class="link-secondary">vue.js</a>, 
-        <a href="https://getbootstrap.com" target="_blank" class="link-secondary">bootstrap</a>, 
-        <a href="https://vitejs.dev" target="_blank" class="link-secondary">vite.js</a>, 
-        <a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link-secondary">fullPage.js</a>
-        
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Modal -->
+        <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                Réalisation de ce site
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Le code source de ce site est disponible sur <a
+                    href="https://github.com/fdouchant/consulting-website">github</a></p>
+                Il utilise plusieurs technologies open source :
+                <a href="https://vuejs.org" target="_blank" class="link-secondary">vue.js</a>,
+                <a href="https://getbootstrap.com" target="_blank" class="link-secondary">bootstrap</a>,
+                <a href="https://vitejs.dev" target="_blank" class="link-secondary">vite.js</a>,
+                <a href="https://alvarotrigo.com/fullPage/" target="_blank" class="link-secondary">fullPage.js</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
-      <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-lg btn-icon-rounded mx-1"
-        tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-4"></i></a>
-      <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-lg btn-icon-rounded mx-1" tabindex="1" role="button"
-        aria-disabled="true"><i class="bi bi-envelope-fill fs-3"></i></a>
+        <a href="https://www.linkedin.com/in/fdouchant/" target="_blank" class="btn btn-primary btn-icon-rounded mx-1"
+          tabindex="1" role="button" aria-disabled="true"><i class="bi bi-linkedin fs-5"></i></a>
+        <a href="mailto:fabrice@douchant.ch" class="btn btn-primary btn-icon-rounded mx-1" tabindex="1" role="button"
+          aria-disabled="true"><i class="bi bi-envelope-fill fs-5"></i></a>
       </div>
     </div>
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.section-lengthy {
+  padding-bottom: $icon-size + 10;
+}
 </style>
