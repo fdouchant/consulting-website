@@ -24,7 +24,7 @@ const options = {
     <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="/logo-1.png" class="my-2" alt="Fabrice Douchant Consulting Logo">
+        <img src="/logo.png" class="my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
@@ -123,10 +123,11 @@ const options = {
     <div class="section" data-anchor="contact">
       <div class="container text-center">
         <p class="fs-1">Une question ?</p>
-        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors l'occasion de partager mes expériences et présenter davantage les services sus-mentionnés.</p>
-        <a href="mailto:fabrice@douchant.ch?subject=Premier contact"  class="btn btn-outline-primary btn-lg mb-4">Me contacter</a>
+        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors l'occasion de partager mes expériences et présenter davantage les services que je propose.</p>
+        <p class="d-flex flex-wrap justify-content-center align-items-center fs-4">Me contacter : <a href="mailto:fabrice@douchant.ch?subject=Premier contact" class="btn btn-outline-primary m-1"><i class="bi bi-envelope-at me-2"></i>fabrice@douchant.ch</a>
+        <a href="tel:+41-76-569-51-58" class="btn btn-outline-success m-1"><i class="bi bi-telephone me-2"></i>+41 76 569 51 58</a></p>
         
-        <p class="fs-4">Je me réjouis d'ores et déjà de vous rencontrer.</p>
+        <p class="fs-3">Je me réjouis d'ores et déjà de vous rencontrer.</p>
       </div>
     </div>
   </full-page>
