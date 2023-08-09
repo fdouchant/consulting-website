@@ -68,7 +68,7 @@ const options = {
       </div>
     </div>
     <div class="section" data-anchor="business-analysis">
-      <Service title="Business Analyse" icon="puzzle">
+      <Service title="Business Analyse" icon="search">
         <template #question>Vous souhaitez réaliser une étude dans le cadre d'un projet d'envergure ?</template>
         <template #default>
           <p>
@@ -86,6 +86,22 @@ const options = {
           </ul>
           </p>
           <p>Certifications dans le domaine : Scrum Product Owner, CCBA</p>
+        </template>
+      </Service>
+    </div>
+    <div class="section" data-anchor="project-management">
+      <Service title="Conduite de projet" icon="rocket-takeoff">
+        <template #question>Vous souhaitez démarrer ou relancer un projet transverse et / ou complexe ?</template>
+        <template #default>
+          <p>
+            Je dispose de l'expérience, des compétences techniques et relationnelles me permettant de :
+          <ul>
+            <li>leader une équipe projet de diverse envergure et composée de profils multiples : domaine, culture, expérience, ... tout en veillant à une utilisation efficiente des ressources</li>
+            <li>conduire un projet selon les prescriptions de l'orgnisation et proposer des approches innovantes et efficasses dans le but d'atteindre les objectifs définis</li>
+            <li>accompagner le changement auprès des utilisateurs et des équipes techniques afin d'assurer un succès durable de la solution issue du projet</li>
+          </ul>
+          </p>
+          <p>Certifications dans le domaine : Scrum Master, Hermes Advanced, CCMP, PMI CAPM</p>
         </template>
       </Service>
     </div>
