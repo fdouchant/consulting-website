@@ -61,8 +61,8 @@ const options = {
           <div class="my-3 d-flex flex-wrap justify-content-center align-items-center">
             <button class="btn btn-outline-primary btn-lg m-2"
               @click.prevent="$refs.fullpage.api.moveTo('business-analysis')">Business analyse</button>
-            <button class="btn btn-outline-success btn-lg m-2">Conduite de projet</button>
-            <button class="btn btn-outline-warning btn-lg m-2">Méthodologie - PMO</button>
+            <button class="btn btn-outline-success btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('project-management')">Conduite de projet</button>
+            <button class="btn btn-outline-warning btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('methodology')">Méthodologie - PMO</button>
           </div>
         </div>
       </div>
@@ -102,6 +102,21 @@ const options = {
           </ul>
           </p>
           <p>Certifications dans le domaine : Scrum Master, Hermes Advanced, CCMP, PMI CAPM</p>
+        </template>
+      </Service>
+    </div>
+    <div class="section" data-anchor="methodology">
+      <Service title="Méthodologie (PMO)" icon="mortarboard">
+        <template #question>Vous souhaitez améliorer vos pratiques en gestion de projet ?</template>
+        <template #default>
+          <p>
+            Avec plus de 10 ans d'expérience en agilité, en méthodes traditionnelles puis en gestion combinée dite "hybride", je suis qualifié pour :
+          <ul>
+            <li>auditer votre méthodologie, proposer des axes d'amélioration et définir une roadmap de transition. Puis accompagner le changement afin d'augmenter signficativement et durablement la culture projet de votre organisation</li>
+            <li>coacher les chefs de projet et responsables d'équipe à de nouvelles méthodes et outils afin d'améliorer l'efficience et l'efficacité des projets. En utilisant des KPIs permettant de mesurer les gains obtenus</li>
+          </ul>
+          </p>
+          <p>Certifications dans le domaine : Lean Six Sigma, Safe, ITIL</p>
         </template>
       </Service>
     </div>
@@ -145,4 +160,9 @@ const options = {
 <style lang="scss" scoped>
 .section-lengthy {
   padding-bottom: $icon-size + 20;
-}</style>
+}
+
+ul {
+  margin-top: 1rem;
+}
+</style>
