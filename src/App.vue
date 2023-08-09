@@ -11,7 +11,7 @@ import Service from './components/Service.vue'
 
 const options = {
   navigation: true,
-  autoScrolling: true,
+  // autoScrolling: true,
   credits: {
     enabled: false, // not working
     label: '',
@@ -24,7 +24,7 @@ const options = {
     <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="https://placehold.co/300x200" class="my-2" alt="Fabrice Douchant Consulting Logo">
+        <img src="/logo-1.png" class="my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
@@ -41,9 +41,9 @@ const options = {
             dans le domaine de l'IT.
             Fort de cette expérience complète et reconnue, je me spécialise dans l'évolution et la modernisation des
             systèmes d'informations.</p>
-          <p>Que ce soit dans le cadre de projets de dématerialisation, techniques ou transverses , je mets à
+          <p>Que ce soit dans le cadre de projets de dématérialisation, techniques ou transverses , je mets à
             profit mes connaissances, expériences et leadership afin d'atteindre les objectifs de mes clients.
-            Axé solutions et résultats, j'ai le soucis d'apporter une valeur ajouté continue et mesurable à l'ensemble de
+            Axé solutions et résultats, j'ai le souci d'apporter une valeur ajoutée continue et mesurable à l'ensemble de
             mes activités.</p>
           <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
             et
@@ -51,7 +51,7 @@ const options = {
 
           <figure class="text-center my-4">
             <blockquote class="blockquote">
-              <p>Un projet est une aventure humaine qui requière coopération, rigueur, pragmatisme et une
+              <p>Un projet est une aventure humaine qui requiert coopération, rigueur, pragmatisme et une
                 bonne dose d'optimisme</p>
             </blockquote>
           </figure>
@@ -67,7 +67,7 @@ const options = {
         </div>
       </div>
     </div>
-    <div class="section" data-anchor="business-analysis">
+    <div class="section section-lengthy" data-anchor="business-analysis">
       <Service title="Business Analyse" icon="search" theme-color="primary">
         <template #question>Vous souhaitez réaliser une étude dans le cadre d'un projet d'envergure ?</template>
         <template #default>
@@ -89,7 +89,7 @@ const options = {
         </template>
       </Service>
     </div>
-    <div class="section" data-anchor="project-management">
+    <div class="section section-lengthy" data-anchor="project-management">
       <Service title="Conduite de projet" icon="rocket-takeoff" theme-color="success">
         <template #question>Vous souhaitez démarrer ou relancer un projet transverse et / ou complexe ?</template>
         <template #default>
@@ -97,7 +97,7 @@ const options = {
             Je dispose de l'expérience, des compétences techniques et relationnelles me permettant de :
           <ul>
             <li>leader une équipe projet de diverse envergure et composée de profils multiples : domaine, culture, expérience, ... tout en veillant à une utilisation efficiente des ressources</li>
-            <li>conduire un projet selon les prescriptions de l'orgnisation et proposer des approches innovantes et efficasses dans le but d'atteindre les objectifs définis</li>
+            <li>conduire un projet selon les prescriptions de l'orgnisation et proposer des approches innovantes et efficaces dans le but d'atteindre les objectifs définis</li>
             <li>accompagner le changement auprès des utilisateurs et des équipes techniques afin d'assurer un succès durable de la solution issue du projet</li>
           </ul>
           </p>
@@ -105,7 +105,7 @@ const options = {
         </template>
       </Service>
     </div>
-    <div class="section" data-anchor="methodology">
+    <div class="section section-lengthy" data-anchor="methodology">
       <Service title="Méthodologie (PMO)" icon="mortarboard" theme-color="warning">
         <template #question>Vous souhaitez améliorer vos pratiques en gestion de projet ?</template>
         <template #default>
@@ -120,10 +120,19 @@ const options = {
         </template>
       </Service>
     </div>
+    <div class="section" data-anchor="contact">
+      <div class="container text-center">
+        <p class="fs-1">Une question ?</p>
+        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors l'occasion de partager mes expériences et présenter davantage les services sus-mentionnés.</p>
+        <a href="mailto:fabrice@douchant.ch?subject=Premier contact"  class="btn btn-outline-primary btn-lg mb-4">Me contacter</a>
+        
+        <p class="fs-4">Je me réjouis d'ores et déjà de vous rencontrer.</p>
+      </div>
+    </div>
   </full-page>
 
   <!-- Button trigger modal -->
-  <a class="position-absolute bottom-0 start-0 p-2 fs-6 fw-light" href="#" data-bs-toggle="modal"
+  <a class="text-primary position-absolute bottom-0 start-0 p-2 fs-6 fw-light" href="#" data-bs-toggle="modal"
     data-bs-target="#creditsModal">
     Crédits
   </a>
