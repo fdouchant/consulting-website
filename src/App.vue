@@ -68,7 +68,7 @@ const options = {
       </div>
     </div>
     <div class="section" data-anchor="business-analysis">
-      <Service title="Business Analyse" icon="search">
+      <Service title="Business Analyse" icon="search" theme-color="primary">
         <template #question>Vous souhaitez réaliser une étude dans le cadre d'un projet d'envergure ?</template>
         <template #default>
           <p>
@@ -90,7 +90,7 @@ const options = {
       </Service>
     </div>
     <div class="section" data-anchor="project-management">
-      <Service title="Conduite de projet" icon="rocket-takeoff">
+      <Service title="Conduite de projet" icon="rocket-takeoff" theme-color="success">
         <template #question>Vous souhaitez démarrer ou relancer un projet transverse et / ou complexe ?</template>
         <template #default>
           <p>
@@ -106,7 +106,7 @@ const options = {
       </Service>
     </div>
     <div class="section" data-anchor="methodology">
-      <Service title="Méthodologie (PMO)" icon="mortarboard">
+      <Service title="Méthodologie (PMO)" icon="mortarboard" theme-color="warning">
         <template #question>Vous souhaitez améliorer vos pratiques en gestion de projet ?</template>
         <template #default>
           <p>

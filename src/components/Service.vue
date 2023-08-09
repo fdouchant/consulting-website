@@ -1,12 +1,19 @@
 <script setup>
-defineProps(['title', 'icon'])
+defineProps({
+  title: String,
+  icon: String,
+  themeColor: {
+    type: String,
+    default: 'primary'
+  }
+})
 </script>
 
 <template>
   <div class="container">
     <div class="text-center mb-4">
       <h1 class="mb-4">{{ title }}</h1>
-      <div class="btn-icon-rounded-xl bg-primary mx-auto">
+      <div :class="`btn-icon-rounded-xl bg-${themeColor} mx-auto`">
         <i :class="`bi bi-${icon} fs-1 text-white`"></i>
       </div>
     </div>
