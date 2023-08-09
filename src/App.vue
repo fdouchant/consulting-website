@@ -41,10 +41,10 @@ const options = {
             dans le domaine de l'IT.
             Fort de cette expérience complète et reconnue, je me spécialise dans l'évolution et la modernisation des
             systèmes d'informations.</p>
-          <p>Axé solutions et résultats, je mets à profit mes compétences en analyse et en conduite de projet ainsi que
-            mes connaissances méthodologiques et en leadership afin d'atteindre les objectifs de mes clients.
-            Que ce soit dans le cadre de projets / programmes de dématerialisation, techniques ou transverses, j'ai le
-            soucis d'apporter une valeur ajouté continue et mesurable à l'ensemble de mes activités.</p>
+          <p>Que ce soit dans le cadre de projets de dématerialisation, techniques ou transverses , je mets à
+            profit mes connaissances, expériences et leadership afin d'atteindre les objectifs de mes clients.
+            Axé solutions et résultats, j'ai le soucis d'apporter une valeur ajouté continue et mesurable à l'ensemble de
+            mes activités.</p>
           <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
             et
             événementiel, sociétés de services, éditeurs de solutions, ...</p>
@@ -59,7 +59,8 @@ const options = {
         <div class=text-center>
           <h2 class="my-5">Mes services</h2>
           <div class="my-3 d-flex flex-wrap justify-content-center align-items-center">
-            <button class="btn btn-outline-primary btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('business-analysis')">Business analyse</button>
+            <button class="btn btn-outline-primary btn-lg m-2"
+              @click.prevent="$refs.fullpage.api.moveTo('business-analysis')">Business analyse</button>
             <button class="btn btn-outline-success btn-lg m-2">Conduite de projet</button>
             <button class="btn btn-outline-warning btn-lg m-2">Méthodologie - PMO</button>
           </div>
@@ -73,11 +74,15 @@ const options = {
           <p>
             De par mon expérience en business analyse, je suis abilité à :
           <ul>
-            <li>identifier, collecter et synthétiser les besoins métiers et techniques afin de définir le périmètre du projet. Je procède ainsi à une analyse systèmique du domaine</li>
-            <li>cartographier les processus métiers et permettre ainsi d'auditer, d'automatiser ou d'optimiser ces processus</li>
-            <li>étudier les variantes de solutions du projet : sélection de produits du marché, développement interne/externe (make or buy)</li>
+            <li>identifier, collecter et synthétiser les besoins métiers et techniques afin de définir le périmètre du
+              projet. Je procède ainsi à une analyse systèmique du domaine</li>
+            <li>cartographier les processus métiers et permettre ainsi d'auditer, d'automatiser ou d'optimiser ces
+              processus</li>
+            <li>étudier les variantes de solutions du projet : sélection de produits du marché, développement
+              interne/externe (make or buy)</li>
             <li>procéder à un appel d'offre public</li>
-            <li>rédiger un cahier des charges incluant les grandes étapes du projet, un calendrier et un plan de financement</li>
+            <li>rédiger un cahier des charges incluant les grandes étapes du projet, un calendrier et un plan de
+              financement</li>
           </ul>
           </p>
           <p>Certifications dans le domaine : Scrum Product Owner, CCBA</p>
@@ -121,6 +126,7 @@ const options = {
   </div>
 </template>
 
-<style lang="scss" scoped>.section-lengthy {
+<style lang="scss" scoped>
+.section-lengthy {
   padding-bottom: $icon-size + 20;
 }</style>
