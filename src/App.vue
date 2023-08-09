@@ -24,7 +24,7 @@ const options = {
     <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="/logo.png" class="my-2" alt="Fabrice Douchant Consulting Logo">
+        <img src="/logo.png" class="img-fluid my-2" alt="Fabrice Douchant Consulting Logo">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
@@ -61,8 +61,10 @@ const options = {
           <div class="my-3 d-flex flex-wrap justify-content-center align-items-center">
             <button class="btn btn-outline-primary btn-lg m-2"
               @click.prevent="$refs.fullpage.api.moveTo('business-analysis')">Business analyse</button>
-            <button class="btn btn-outline-success btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('project-management')">Conduite de projet</button>
-            <button class="btn btn-outline-warning btn-lg m-2" @click.prevent="$refs.fullpage.api.moveTo('methodology')">Méthodologie - PMO</button>
+            <button class="btn btn-outline-success btn-lg m-2"
+              @click.prevent="$refs.fullpage.api.moveTo('project-management')">Conduite de projet</button>
+            <button class="btn btn-outline-warning btn-lg m-2"
+              @click.prevent="$refs.fullpage.api.moveTo('methodology')">Méthodologie - PMO</button>
           </div>
         </div>
       </div>
@@ -96,9 +98,12 @@ const options = {
           <p>
             Je dispose de l'expérience, des compétences techniques et relationnelles me permettant de :
           <ul>
-            <li>leader une équipe projet de diverse envergure et composée de profils multiples : domaine, culture, expérience, ... tout en veillant à une utilisation efficiente des ressources</li>
-            <li>conduire un projet selon les prescriptions de l'orgnisation et proposer des approches innovantes et efficaces dans le but d'atteindre les objectifs définis</li>
-            <li>accompagner le changement auprès des utilisateurs et des équipes techniques afin d'assurer un succès durable de la solution issue du projet</li>
+            <li>leader une équipe projet de diverse envergure et composée de profils multiples : domaine, culture,
+              expérience, ... tout en veillant à une utilisation efficiente des ressources</li>
+            <li>conduire un projet selon les prescriptions de l'orgnisation et proposer des approches innovantes et
+              efficaces dans le but d'atteindre les objectifs définis</li>
+            <li>accompagner le changement auprès des utilisateurs et des équipes techniques afin d'assurer un succès
+              durable de la solution issue du projet</li>
           </ul>
           </p>
           <p>Certifications dans le domaine : Scrum Master, Hermes Advanced, CCMP, PMI CAPM</p>
@@ -110,10 +115,14 @@ const options = {
         <template #question>Vous souhaitez améliorer vos pratiques en gestion de projet ?</template>
         <template #default>
           <p>
-            Avec plus de 10 ans d'expérience en agilité, en méthodes traditionnelles puis en gestion combinée dite "hybride", je suis qualifié pour :
+            Avec plus de 10 ans d'expérience en agilité, en méthodes traditionnelles puis en gestion combinée dite
+            "hybride", je suis qualifié pour :
           <ul>
-            <li>auditer votre méthodologie, proposer des axes d'amélioration et définir une roadmap de transition. Puis accompagner le changement afin d'augmenter signficativement et durablement la culture projet de votre organisation</li>
-            <li>coacher les chefs de projet et responsables d'équipe à de nouvelles méthodes et outils afin d'améliorer l'efficience et l'efficacité des projets. En utilisant des KPIs permettant de mesurer les gains obtenus</li>
+            <li>auditer votre méthodologie, proposer des axes d'amélioration et définir une roadmap de transition. Puis
+              accompagner le changement afin d'augmenter signficativement et durablement la culture projet de votre
+              organisation</li>
+            <li>coacher les chefs de projet et responsables d'équipe à de nouvelles méthodes et outils afin d'améliorer
+              l'efficience et l'efficacité des projets. En utilisant des KPIs permettant de mesurer les gains obtenus</li>
           </ul>
           </p>
           <p>Certifications dans le domaine : Lean Six Sigma, Safe, ITIL</p>
@@ -123,10 +132,15 @@ const options = {
     <div class="section" data-anchor="contact">
       <div class="container text-center">
         <p class="fs-1">Une question ?</p>
-        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors l'occasion de partager mes expériences et présenter davantage les services que je propose.</p>
-        <p class="d-flex flex-wrap justify-content-center align-items-center fs-4">Me contacter : <a href="mailto:fabrice@douchant.ch?subject=Premier contact" class="btn btn-outline-primary m-1"><i class="bi bi-envelope-at me-2"></i>fabrice@douchant.ch</a>
-        <a href="tel:+41-76-569-51-58" class="btn btn-outline-success m-1"><i class="bi bi-telephone me-2"></i>+41 76 569 51 58</a></p>
-        
+        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors
+          l'occasion de partager mes expériences et présenter davantage les services que je propose.</p>
+        <p class="container-fluid fs-4">Me contacter : <a href="mailto:fabrice@douchant.ch?subject=Premier contact"
+            class="btn btn-outline-primary m-1"><i class="bi bi-envelope-at"></i><span
+              class="d-none d-md-inline ms-2">fabrice@douchant.ch</span></a>
+          <a href="tel:+41-76-569-51-58" class="btn btn-outline-success m-1"><i class="bi bi-telephone"></i><span
+              class="d-none d-md-inline ms-2">+41 76 569 51 58</span></a>
+        </p>
+
         <p class="fs-3">Je me réjouis d'ores et déjà de vous rencontrer.</p>
       </div>
     </div>
@@ -163,16 +177,13 @@ const options = {
 
         </div>
       </div>
-    </div>
   </div>
-</template>
+</div></template>
 
-<style lang="scss" scoped>
-.section-lengthy {
+<style lang="scss" scoped>.section-lengthy {
   padding-bottom: $icon-size + 20;
 }
 
 ul {
   margin-top: 1rem;
-}
-</style>
+}</style>
