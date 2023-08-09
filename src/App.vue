@@ -1,11 +1,3 @@
-/* 
-TODO :
-- change colors
-- change images
-- add other services
-- review texts
-- responsive content : not nice on mobile
-*/
 <script setup>
 import Service from './components/Service.vue'
 
@@ -24,7 +16,7 @@ const options = {
     <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="/logo.png" class="img-fluid my-2" alt="Fabrice Douchant Consulting Logo">
+        <img src="/logo.png" class="img-fluid my-2" alt="Fabrice Douchant Consulting Logo" style="max-width: 80vw;">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
@@ -140,6 +132,7 @@ const options = {
           <a href="tel:+41-76-569-51-58" class="btn btn-outline-success m-1"><i class="bi bi-telephone"></i><span
               class="d-none d-md-inline ms-2">+41 76 569 51 58</span></a>
         </p>
+        <p class="fs-5"><i class="bi bi-geo-alt"></i> Lausanne, Suisse</p>
 
         <p class="fs-3">Je me réjouis d'ores et déjà de vous rencontrer.</p>
       </div>
