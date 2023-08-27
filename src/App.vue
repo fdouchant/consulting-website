@@ -28,13 +28,13 @@ const options = {
       <div class="container">
         <h1 class="text-center my-5">Présentation</h1>
         <div>
-          <img src="https://placehold.co/100x100" style="width: 100px;" alt="Fabrice Douchant"
-            class="rounded float-start my-2 me-2">
+          <img src="/photo.jpg" style="width: 100px;" alt="Fabrice Douchant"
+            class="rounded-circle float-start my-2 me-2">
           <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de gestion
             dans le domaine de l'IT.
             Fort de cette expérience complète et reconnue, je me spécialise dans l'évolution et la modernisation des
             systèmes d'informations.</p>
-          <p>Que ce soit dans le cadre de projets de dématérialisation, techniques ou transverses , je mets à
+          <p>Que ce soit dans le cadre de projets de dématérialisation, techniques ou transverses, je mets à
             profit mes connaissances, expériences et leadership afin d'atteindre les objectifs de mes clients.
             Axé solutions et résultats, j'ai le souci d'apporter une valeur ajoutée continue et mesurable à l'ensemble de
             mes activités.</p>
@@ -80,7 +80,7 @@ const options = {
               financement</li>
           </ul>
           </p>
-          <p>Certifications dans le domaine : Scrum Product Owner, CCBA</p>
+          <p class="d-none">Certifications dans le domaine : Scrum Product Owner, CCBA</p>
         </template>
       </Service>
     </div>
@@ -99,7 +99,7 @@ const options = {
               durable de la solution issue du projet</li>
           </ul>
           </p>
-          <p>Certifications dans le domaine : Scrum Master, Hermes Advanced, CCMP, PMI CAPM</p>
+          <p>Certifications dans le domaine : Scrum Master, Hermes Advanced<span class="d-none">, CCMP</span>, PMI CAPM</p>
         </template>
       </Service>
     </div>
@@ -118,7 +118,7 @@ const options = {
               l'efficience et l'efficacité des projets. En utilisant des KPIs permettant de mesurer les gains obtenus</li>
           </ul>
           </p>
-          <p>Certifications dans le domaine : Lean Six Sigma, Safe, ITIL</p>
+          <p>Certifications dans le domaine : Lean Six Sigma<span class="d-none">, Safe</span>, ITIL</p>
         </template>
       </Service>
     </div>
