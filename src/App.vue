@@ -125,17 +125,17 @@ const options = {
     <div class="section" data-anchor="contact">
       <div class="container text-center">
         <p class="fs-1">Une question ?</p>
-        <p class="fs-5">Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors
+        <p>Je me tiens volontiers à votre disposition afin d'échanger sur vos besoins. Ce sera alors
           l'occasion de partager mes expériences et présenter davantage les services que je propose.</p>
-        <p class="container-fluid fs-4">Me contacter : <a href="mailto:fabrice@douchant.ch?subject=Premier contact"
+        <p class="container-fluid fs-5">Me contacter : <a href="mailto:fabrice@douchant.ch?subject=Premier contact"
             class="btn btn-outline-primary m-1"><i class="bi bi-envelope-at"></i><span
               class="d-none d-md-inline ms-2">fabrice@douchant.ch</span></a>
           <a href="tel:+41-76-569-51-58" class="btn btn-outline-success m-1"><i class="bi bi-telephone"></i><span
               class="d-none d-md-inline ms-2">+41 76 569 51 58</span></a>
         </p>
-        <p class="fs-5"><i class="bi bi-geo-alt"></i> Lausanne, Suisse</p>
+        <p><i class="bi bi-geo-alt"></i> Lausanne, Suisse</p>
 
-        <p class="fs-3">Je me réjouis d'ores et déjà de vous rencontrer.</p>
+        <p class="fs-4">Je me réjouis d'ores et déjà de vous rencontrer.</p>
       </div>
     </div>
   </full-page>
