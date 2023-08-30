@@ -12,8 +12,8 @@ defineProps({
 <template>
   <div class="container">
     <div class="text-center">
-      <h1 class="my-5">{{ title }}</h1>
-      <div :class="`btn-icon-rounded-xl bg-${themeColor} mx-auto`">
+      <h1 class="mt-5 mb-3">{{ title }}</h1>
+      <div :class="`btn-icon-rounded-xl bg-${themeColor} mx-auto mb-3`">
         <i :class="`bi bi-${icon} fs-1 text-white`"></i>
       </div>
     </div>
