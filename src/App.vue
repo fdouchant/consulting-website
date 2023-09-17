@@ -17,7 +17,8 @@ const options = {
     <div class="section" data-anchor="home">
       <div class="container text-center">
         <h1>Fabrice Douchant Consulting</h1>
-        <img src="/logo.png" class="img-fluid my-2" alt="Fabrice Douchant Consulting Logo" style="width: 290px; max-width: 80vw;">
+        <img src="/logo.png" class="img-fluid my-2" alt="Fabrice Douchant Consulting Logo"
+          style="width: 290px; max-width: 80vw;">
         <h2>Expert en projet digital</h2>
         <button class="btn btn-primary btn-lg my-4" @click.prevent="$refs.fullpage.api.moveTo('about')">
           En savoir plus
@@ -28,19 +29,28 @@ const options = {
       <div class="container">
         <h1 class="text-center my-5">Présentation</h1>
         <div>
-          <img src="/photo.jpg" style="width: 100px;" alt="Fabrice Douchant"
-            class="rounded-circle float-start my-2 me-2">
-          <p>Issu d'une formation universitaire en informatique, j'ai évolué dans plusieurs rôles techniques et de gestion
-            dans le domaine de l'IT.
-            Fort de cette expérience complète et reconnue, je me spécialise dans l'évolution et la modernisation des
-            systèmes d'informations.</p>
-          <p>Que ce soit dans le cadre de projets de dématérialisation, techniques ou transverses, je mets à
-            profit mes connaissances, expériences et leadership afin d'atteindre les objectifs de mes clients.
-            Axé solutions et résultats, j'ai le souci d'apporter une valeur ajoutée continue et mesurable à l'ensemble de
-            mes activités.</p>
-          <p>Mes domaines d'intervention sont multiples : finances et assurances, institutions publiques, communication
-            et
-            événementiel, sociétés de services, éditeurs de solutions, ...</p>
+          <img src="/photo.jpg" style="width: 100px;" alt="Fabrice Douchant" class="rounded-circle float-start my-2 me-2">
+          <p>Ingénieur de formation, j'ai une expérience technique solide de part mes fonctions de développeur et
+            d'architecte du système d'information. Et une connaissance accrue des méthodes agiles (Scrum, Kanban, XP) qui
+            ont rythmé l'ensemble de mon expérience professionnelle.</p>
+          <p>J'ai également dirigé pendant plusieurs années des équipes multi-fonctionnelles parmis lesquelles j'ai initié
+            des transformations agiles/Lean/ITIL.</p>
+          <p>Dans le cadre de grandes institutions, je me suis formé et certifité à la gestion de projet traditionnelle
+            (PMI, Hermes) ainsi qu'à la business analyse. J'ai rapidement compris les limites et les avantages de ces
+            approches, raison pour laquelle je me suis intéressé aux méthodes hybrides et au design thinking. Les projets
+            et analyses que j'ai alors menés ont rencontré un franc succès auprès des clients, équipes techniques et des
+            décideurs.</p>
+          <p>Je mets dorénavant à profit mon expérience et mes connaissances à travers des services de
+            consulting destinés à différents domaines : finances et assurances, institutions publiques, société de
+            communication et événementiel, éditeur de solutions, ...</p>
+          <p>Mon approche se résume en 2 mots :
+          <ul>
+            <li>efficacité à travers un leadership naturel, une conduite rigoureuse des projets et analyses, et une
+              aisance naturelle à l'utilisation des outils et différentes méthodes de travail.</li>
+            <li>efficience par une utilisation optimale des ressources, la conduite du changement, ainsi que la volonté
+              d'apporter une valeur ajoutée continue et mesurable à l'ensemble de mes activités.</li>
+          </ul>
+          </p>
 
           <figure class="text-center my-4">
             <blockquote class="blockquote">
@@ -99,7 +109,8 @@ const options = {
               durable de la solution issue du projet</li>
           </ul>
           </p>
-          <p>Certifications dans le domaine : Scrum Master, Hermes Advanced<span class="d-none">, CCMP</span>, PMI CAPM</p>
+          <p>Certifications dans le domaine : Scrum Master, Hermes Advanced<span class="d-none">, CCMP</span>, PMI CAPM
+          </p>
         </template>
       </Service>
     </div>
@@ -171,10 +182,12 @@ const options = {
 
         </div>
       </div>
+    </div>
   </div>
-</div></template>
+</template>
 
-<style lang="scss" scoped>.section-lengthy {
+<style lang="scss" scoped>
+.section-lengthy {
   padding-bottom: $icon-size + 20;
 }
 
