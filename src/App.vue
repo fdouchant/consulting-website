@@ -30,8 +30,8 @@ const options = {
         <h1 class="text-center my-5">Présentation</h1>
         <div>
           <img src="/photo.jpg" style="width: 100px;" alt="Fabrice Douchant" class="rounded-circle float-start my-2 me-2">
-          <p>Ingénieur de formation, j'ai une expérience technique solide de part mes fonctions de développeur et
-            d'architecte du système d'information. Et une connaissance accrue des méthodes agiles (Scrum, Kanban, XP) qui
+          <p>Ingénieur de formation, j'ai une solide expérience technique de part mes précédentes fonctions de développeur et
+            d'architecte du système d'information. Ainsi qu'une connaissance accrue des méthodes agiles (Scrum, Kanban, XP) qui
             ont rythmé l'ensemble de mon expérience professionnelle.</p>
           <p>J'ai également dirigé pendant plusieurs années des équipes multi-fonctionnelles parmis lesquelles j'ai initié
             des transformations agiles/Lean/ITIL.</p>
@@ -47,7 +47,7 @@ const options = {
           <ul>
             <li>efficacité à travers un leadership naturel, une conduite rigoureuse des projets et analyses, et une
               aisance naturelle à l'utilisation des outils et différentes méthodes de travail.</li>
-            <li>efficience par une utilisation optimale des ressources, la conduite du changement, ainsi que la volonté
+            <li>efficience par l'utilisation optimale des ressources, la conduite du changement, ainsi que la volonté
               d'apporter une valeur ajoutée continue et mesurable à l'ensemble de mes activités.</li>
           </ul>
           </p>
