@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18nPlugin from '@intlify/vite-plugin-vue-i18n'
 import { fileURLToPath } from 'url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    vueI18n({
-      include: path.resolve(__dirname, '..locales')
+    VueI18nPlugin({
+      include: path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../locales/**')
     })
   ],
   resolve: {
